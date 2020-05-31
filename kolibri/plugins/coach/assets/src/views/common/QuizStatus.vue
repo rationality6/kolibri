@@ -43,7 +43,7 @@
           <StatusElapsedTime
             :date="examDateOpened"
             actionType="opened"
-            style="margin-top: 8px; display: block;"
+            style="display: block; margin-top: 8px;"
           />
         </KGridItem>
       </div>

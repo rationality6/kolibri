@@ -175,10 +175,6 @@
 
   @import '~keen-ui/src/styles/imports';
 
-  .delay {
-    animation-delay: 1s;
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -191,6 +187,10 @@
   $ui-progress-indeterminate-rotation-duration: 0.7s !default;
   $ui-progress-indeterminate-color-duration: 6s !default;
   $ui-progress-determinate-transition-duration: 0.3s !default;
+
+  .delay {
+    animation-delay: 1s;
+  }
 
   .ui-progress-circular {
     position: relative;

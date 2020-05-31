@@ -8,29 +8,27 @@
 <style>
 
   .popper {
-    width: auto;
-    background-color: #fafafa;
-    color: #212121;
-    text-align: center;
-    padding: 2px;
-    display: inline-block;
-    border-radius: 3px;
     position: absolute;
+    z-index: 200000;
+    display: inline-block;
+    width: auto;
+    padding: 2px;
     font-size: 14px;
     font-weight: normal;
+    color: #212121;
+    text-align: center;
+    background-color: #fafafa;
     border: 1px #ebebeb solid;
-    z-index: 200000;
-    -moz-box-shadow: rgb(58, 58, 58) 0 0 6px 0;
-    -webkit-box-shadow: rgb(58, 58, 58) 0 0 6px 0;
-    box-shadow: rgb(58, 58, 58) 0 0 6px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 0 rgb(58, 58, 58);
   }
 
   .popper .popper__arrow {
+    position: absolute;
     width: 0;
     height: 0;
-    border-style: solid;
-    position: absolute;
     margin: 5px;
+    border-style: solid;
   }
 
   .popper[x-placement^="top"] {
@@ -38,12 +36,12 @@
   }
 
   .popper[x-placement^="top"] .popper__arrow {
-    border-width: 5px 5px 0 5px;
-    border-color: #fafafa transparent transparent transparent;
     bottom: -5px;
     left: calc(50% - 5px);
     margin-top: 0;
     margin-bottom: 0;
+    border-color: #fafafa transparent transparent;
+    border-width: 5px 5px 0;
   }
 
   .popper[x-placement^="bottom"] {
@@ -51,12 +49,12 @@
   }
 
   .popper[x-placement^="bottom"] .popper__arrow {
-    border-width: 0 5px 5px 5px;
-    border-color: transparent transparent #fafafa transparent;
     top: -5px;
     left: calc(50% - 5px);
     margin-top: 0;
     margin-bottom: 0;
+    border-color: transparent transparent #fafafa;
+    border-width: 0 5px 5px;
   }
 
   .popper[x-placement^="right"] {
@@ -64,12 +62,12 @@
   }
 
   .popper[x-placement^="right"] .popper__arrow {
-    border-width: 5px 5px 5px 0;
-    border-color: transparent #fafafa transparent transparent;
-    left: -5px;
     top: calc(50% - 5px);
-    margin-left: 0;
+    left: -5px;
     margin-right: 0;
+    margin-left: 0;
+    border-color: transparent #fafafa transparent transparent;
+    border-width: 5px 5px 5px 0;
   }
 
   .popper[x-placement^="left"] {
@@ -77,12 +75,12 @@
   }
 
   .popper[x-placement^="left"] .popper__arrow {
-    border-width: 5px 0 5px 5px;
-    border-color: transparent transparent transparent #fafafa;
-    right: -5px;
     top: calc(50% - 5px);
-    margin-left: 0;
+    right: -5px;
     margin-right: 0;
+    margin-left: 0;
+    border-color: transparent transparent transparent #fafafa;
+    border-width: 5px 0 5px 5px;
   }
 
 </style>

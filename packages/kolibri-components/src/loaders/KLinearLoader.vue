@@ -102,10 +102,6 @@
   @import '~keen-ui/src/styles/imports';
   @import '~kolibri.styles.definitions';
 
-  .delay {
-    animation-delay: 1s;
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -116,6 +112,10 @@
   }
 
   $ui-progress-linear-height: rem-calc(4px) !default;
+
+  .delay {
+    animation-delay: 1s;
+  }
 
   .ui-progress-linear {
     position: relative;
